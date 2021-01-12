@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 id="add-new-user">Add New User</h1>
+      <p>Create a brand new user and add them to this site.</p>
+      <form>
+        <div class="form-field">
+          <label for="user_login">Username (required)</label>
+          <input type="text" name="user_login" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email (required)</label>
+          <input type="text" name="email" />
+        </div>
+        <div class="form-field">
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" />
+        </div>
+        <div class="form-field">
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" />
+        </div>
+        <div class="form-field">
+          <label for="url">Website</label>
+          <input type="text" name="url" />
+        </div>
+        <div class="form-field">
+          <label for="pass1">Password</label>
+          <button type="button" name="pass1">Show Password</button>
+        </div>
+        <div class="form-field-send-user-notif">
+          <p>Send User Notification</p>
+          <div class="form-field-send-notif">
+            <input type="checkbox" />
+            <p>Send the new user an email about their account.</p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="dropdown">Role</label>
+          <select name="dropdown">
+            <option>Subscriber</option>
+            <option>Contributor</option>
+            <option>Author</option>
+            <option>Editor</option>
+            <option>Administrator</option>
+          </select>
+        </div>
+        <input class="submit" type="submit" value="Add New User" />
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
